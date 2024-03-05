@@ -1,10 +1,6 @@
 ﻿<Properties StartupConfiguration="{14FE5E3E-84AB-4FC1-9366-7551DBDB1803}|Default">
   <MonoDevelop.Ide.ItemProperties.Using__HashSets PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Using_HashSets/Program.cs">
-    <Files>
-      <File FileName="Using_HashSets/Program.cs" Line="1" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

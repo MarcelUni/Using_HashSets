@@ -83,7 +83,16 @@ namespace Using_HashSets
 
             Get_Add_Performance_HashSet_vs_List();
 
-            /// In this method the list 
+            /// Here lists are faster
+            /// This is because in lists they simply just add the element to the end of the list
+
+            Get_Contains_Performance_HashSet_vs_List();
+
+            /// Here hashsets are faster because the hashset should know directly where an item is located in the dataset
+
+            Get_Remove_Performance_HashSet_vs_List();
+
+            /// This is faster becuase the hashset uses the same mechanism to locate at the contains method
 
         }
 
@@ -134,5 +143,78 @@ namespace Using_HashSets
 
         }
 
+        static void Get_Contains_Performance_HashSet_vs_List()
+        {
+
+            Console.WriteLine("____________________________________");
+            Console.WriteLine("List Performance while checking Contains operation");
+            Console.WriteLine();
+            List<string> lstNames = new List<string>();
+            var s2 = Stopwatch.StartNew();
+            foreach (string s in names)
+            {
+                lstNames.Contains(s);
+            }
+            s2.Stop();
+
+            Console.WriteLine(s2.Elapsed.TotalMilliseconds.ToString("0.000 ms")); Console.WriteLine();
+            Console.WriteLine("Ends Here");
+            Console.WriteLine();
+            Console.WriteLine("____________________________________");
+            Console.WriteLine("HashSet Performance while checking Contains operation");
+            Console.WriteLine();
+
+            HashSet<string> hStringNames = new HashSet<string>(StringComparer.Ordinal);
+            var s1 = Stopwatch.StartNew();
+            foreach (string s in names)
+            {
+                hStringNames.Contains(s);
+            }
+            s1.Stop();
+
+            Console.WriteLine(s1.Elapsed.TotalMilliseconds.ToString("0.000 ms"));
+            Console.WriteLine();
+            Console.WriteLine("Ends Here");
+            Console.WriteLine("____________________________________");
+            Console.WriteLine();
+
+        }
+
+        static void Get_Remove_Performance_HashSet_vs_List()
+        {
+
+            Console.WriteLine("____________________________________");
+            Console.WriteLine("List Performance while performing Remove item operation");
+            Console.WriteLine();
+            List<string> lstNames = new List<string>();
+            var s2 = Stopwatch.StartNew();
+            foreach (string s in names)
+            {
+                lstNames.Remove(s);
+            }
+            s2.Stop();
+
+            Console.WriteLine(s2.Elapsed.TotalMilliseconds.ToString("0.000 ms")); Console.WriteLine();
+            Console.WriteLine("Ends Here");
+            Console.WriteLine();
+            Console.WriteLine("____________________________________");
+            Console.WriteLine("HashSet Performance while performing Remove item operation");
+            Console.WriteLine();
+
+            HashSet<string> hStringNames = new HashSet<string>(StringComparer.Ordinal);
+            var s1 = Stopwatch.StartNew();
+            foreach (string s in names)
+            {
+                hStringNames.Remove(s);
+            }
+            s1.Stop();
+
+            Console.WriteLine(s1.Elapsed.TotalMilliseconds.ToString("0.000 ms")); Console.WriteLine();
+            Console.WriteLine("Ends Here");
+            Console.WriteLine("____________________________________");
+            Console.WriteLine();
+
+        }
     }
+    
 }
