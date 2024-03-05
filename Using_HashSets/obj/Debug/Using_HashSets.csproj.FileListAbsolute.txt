@@ -1,0 +1,6 @@
+/Users/marcelkress/Desktop/Using_HashSets/Using_HashSets/bin/Debug/Using_HashSets.exe
+/Users/marcelkress/Desktop/Using_HashSets/Using_HashSets/bin/Debug/Using_HashSets.pdb
+/Users/marcelkress/Desktop/Using_HashSets/Using_HashSets/obj/Debug/Using_HashSets.csproj.AssemblyReference.cache
+/Users/marcelkress/Desktop/Using_HashSets/Using_HashSets/obj/Debug/Using_HashSets.csproj.CoreCompileInputs.cache
+/Users/marcelkress/Desktop/Using_HashSets/Using_HashSets/obj/Debug/Using_HashSets.exe
+/Users/marcelkress/Desktop/Using_HashSets/Using_HashSets/obj/Debug/Using_HashSets.pdb
